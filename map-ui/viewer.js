@@ -1,6 +1,34 @@
 const MAP_URL = "map-assets/the_ville_jan7-2.json";
 const LOCATION_METADATA_URL = "map-assets/location-metadata.json";
+const UI_STATE_URL = `ui-state.json?v=${Date.now()}`;
 const ASSET_ROOT = "map-assets/";
+const AGENT_NAMES = [
+  "latoya williams",
+  "rajiv patel",
+  "abigail chen",
+  "francisco lopez",
+  "hailey johnson",
+  "arthur burton",
+  "ryan park",
+  "isabella rodriguez",
+  "giorgio rossi",
+  "carlos gomez",
+  "klaus mueller",
+  "maria lopez",
+  "ayesha khan",
+  "wolfgang schulz",
+  "mei lin",
+  "john lin",
+  "eddy lin",
+  "tom moreno",
+  "jane moreno",
+  "tamara taylor",
+  "carmen ortiz",
+  "sam moore",
+  "jennifer moore",
+  "yuriko yamamoto",
+  "adam smith"
+];
 const TILESETS = [
   ["CuteRPG_Field_B", "cute_rpg_word_VXAce/tilesets/CuteRPG_Field_B.png"],
   ["CuteRPG_Field_C", "cute_rpg_word_VXAce/tilesets/CuteRPG_Field_C.png"],
@@ -63,6 +91,7 @@ let selectedLocation;
 let isDragging = false;
 let dragPosition;
 let lastHoveredTile = null;
+let loadFailed = false;
 
 const config = {
   type: Phaser.AUTO,
@@ -86,18 +115,42 @@ const game = new Phaser.Game(config);
 
 function preload() {
   this.load.on("loaderror", (file) => {
+    loadFailed = true;
     showError(`Could not load ${file.key}: ${file.src}`);
   });
 
   TILESETS.forEach(([key, path]) => {
     this.load.image(key, `${ASSET_ROOT}${path}`);
   });
+  AGENT_NAMES.forEach((name) => {
+    const filename = name.split(" ").map((word) =>
+      word[0].toUpperCase() + word.slice(1)
+    ).join("_");
+    this.load.spritesheet(`agent:${name}`, `characters/${filename}.png`, {
+      frameWidth: 32,
+      frameHeight: 32
+    });
+  });
   this.load.tilemapTiledJSON("ville-map", MAP_URL);
   this.load.json("location-metadata", LOCATION_METADATA_URL);
+  this.load.json("ui-state", UI_STATE_URL);
 }
 
 function create() {
+  if (loadFailed) {
+    return;
+  }
+
   tilemap = this.make.tilemap({ key: "ville-map" });
+  const agents = this.cache.json.get("ui-state");
+  for (const [name, agent] of Object.entries(agents)) {
+    const tile = agent?.tile;
+    if (!tile || !Number.isInteger(tile.x) || !Number.isInteger(tile.y) ||
+        tile.x < 0 || tile.y < 0 || tile.x >= tilemap.width || tile.y >= tilemap.height) {
+      showError(`Invalid tile coordinates for ${name} in ui-state.json`);
+      return;
+    }
+  }
   locationMetadata = this.cache.json.get("location-metadata");
   locationLayers = {
     sector: getMapLayerData("Sector Blocks"),
@@ -128,6 +181,15 @@ function create() {
     };
   });
   updateLayerVisibility();
+
+  Object.entries(agents).forEach(([name, { tile }]) => {
+    this.add.sprite(
+      (tile.x + 0.5) * tilemap.tileWidth,
+      (tile.y + 0.5) * tilemap.tileHeight,
+      `agent:${name}`,
+      1
+    ).setScale(1.25).setDepth(1000);
+  });
 
   mapCamera = this.cameras.main;
   createLocationTree();
