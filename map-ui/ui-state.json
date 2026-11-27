@@ -1,27 +1,77 @@
 {
-  "latoya williams": {},
-  "rajiv patel": {},
-  "abigail chen": {},
-  "francisco lopez": {},
-  "hailey johnson": {},
-  "arthur burton": {},
-  "ryan park": {},
-  "isabella rodriguez": {},
-  "giorgio rossi": {},
-  "carlos gomez": {},
-  "klaus mueller": {},
-  "maria lopez": {},
-  "ayesha khan": {},
-  "wolfgang schulz": {},
-  "mei lin": {},
-  "john lin": {},
-  "eddy lin": {},
-  "tom moreno": {},
-  "jane moreno": {},
-  "tamara taylor": {},
-  "carmen ortiz": {},
-  "sam moore": {},
-  "jennifer moore": {},
-  "yuriko yamamoto": {},
-  "adam smith": {}
+  "latoya williams": {
+    "tile": { "x": 16, "y": 18 }
+  },
+  "rajiv patel": {
+    "tile": { "x": 26, "y": 18 }
+  },
+  "abigail chen": {
+    "tile": { "x": 36, "y": 18 }
+  },
+  "francisco lopez": {
+    "tile": { "x": 16, "y": 32 }
+  },
+  "hailey johnson": {
+    "tile": { "x": 26, "y": 32 }
+  },
+  "arthur burton": {
+    "tile": { "x": 53, "y": 14 }
+  },
+  "ryan park": {
+    "tile": { "x": 65, "y": 19 }
+  },
+  "isabella rodriguez": {
+    "tile": { "x": 72, "y": 14 }
+  },
+  "giorgio rossi": {
+    "tile": { "x": 86, "y": 18 }
+  },
+  "carlos gomez": {
+    "tile": { "x": 94, "y": 18 }
+  },
+  "klaus mueller": {
+    "tile": { "x": 126, "y": 46 }
+  },
+  "maria lopez": {
+    "tile": { "x": 123, "y": 57 }
+  },
+  "ayesha khan": {
+    "tile": { "x": 118, "y": 61 }
+  },
+  "wolfgang schulz": {
+    "tile": { "x": 107, "y": 62 }
+  },
+  "mei lin": {
+    "tile": { "x": 90, "y": 74 }
+  },
+  "john lin": {
+    "tile": { "x": 91, "y": 74 }
+  },
+  "eddy lin": {
+    "tile": { "x": 93, "y": 74 }
+  },
+  "tom moreno": {
+    "tile": { "x": 73, "y": 74 }
+  },
+  "jane moreno": {
+    "tile": { "x": 72, "y": 74 }
+  },
+  "tamara taylor": {
+    "tile": { "x": 54, "y": 74 }
+  },
+  "carmen ortiz": {
+    "tile": { "x": 57, "y": 74 }
+  },
+  "sam moore": {
+    "tile": { "x": 36, "y": 65 }
+  },
+  "jennifer moore": {
+    "tile": { "x": 37, "y": 65 }
+  },
+  "yuriko yamamoto": {
+    "tile": { "x": 28, "y": 65 }
+  },
+  "adam smith": {
+    "tile": { "x": 20, "y": 65 }
+  }
 }
