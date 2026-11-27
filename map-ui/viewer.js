@@ -1,7 +1,11 @@
+// The Tiled map provides layers and tilesets; location metadata adds names and
+// bounds for navigation. UI state supplies the agents' current tile positions.
 const MAP_URL = "map-assets/the_ville_jan7-2.json";
 const LOCATION_METADATA_URL = "map-assets/location-metadata.json";
+// Request a fresh snapshot on each page load instead of reusing a cached one.
 const UI_STATE_URL = `ui-state.json?v=${Date.now()}`;
 const ASSET_ROOT = "map-assets/";
+// These names determine which character PNGs Phaser preloads.
 const AGENT_NAMES = [
   "latoya williams",
   "rajiv patel",
@@ -29,6 +33,7 @@ const AGENT_NAMES = [
   "yuriko yamamoto",
   "adam smith"
 ];
+// Each key must match a tileset name in the Tiled map; paths are relative to ASSET_ROOT.
 const TILESETS = [
   ["CuteRPG_Field_B", "cute_rpg_word_VXAce/tilesets/CuteRPG_Field_B.png"],
   ["CuteRPG_Field_C", "cute_rpg_word_VXAce/tilesets/CuteRPG_Field_C.png"],
@@ -50,6 +55,7 @@ const TILESETS = [
   ["blocks_3", "blocks/blocks_3.png"]
 ];
 
+// References to the surrounding HTML controls, outside Phaser's canvas.
 const statusElement = document.getElementById("status");
 const statusIndicator = document.querySelector(".live-indicator");
 const gameContainer = document.getElementById("game-container");
@@ -68,6 +74,7 @@ const locationToggle = document.getElementById("location-toggle");
 const locationPanel = document.getElementById("map-hover-info");
 const locationClose = document.getElementById("location-close");
 const locationSummary = document.getElementById("location-summary");
+// All other map layers are treated as optional technical overlays.
 const VISUAL_LAYER_NAMES = new Set([
   "Bottom Ground",
   "Exterior Ground",
@@ -81,6 +88,7 @@ const VISUAL_LAYER_NAMES = new Set([
   "Foreground L2"
 ]);
 
+// Shared scene and UI state used by the event handlers below.
 let mapCamera;
 let tilemap;
 let locationMetadata;
@@ -93,6 +101,8 @@ let dragPosition;
 let lastHoveredTile = null;
 let loadFailed = false;
 
+// Phaser calls preload before create. RESIZE tracks the available canvas area;
+// pixelArt and antialias keep the tile artwork crisp when zoomed.
 const config = {
   type: Phaser.AUTO,
   parent: "game-container",
@@ -113,6 +123,7 @@ const config = {
 
 const game = new Phaser.Game(config);
 
+// Queue all files before creating the scene; any failed load prevents setup.
 function preload() {
   this.load.on("loaderror", (file) => {
     loadFailed = true;
@@ -122,6 +133,8 @@ function preload() {
   TILESETS.forEach(([key, path]) => {
     this.load.image(key, `${ASSET_ROOT}${path}`);
   });
+  // Convert "arthur burton" to Arthur_Burton.png. Each sheet is a grid of
+  // 32×32 frames; the state file uses the same lowercase name as the key.
   AGENT_NAMES.forEach((name) => {
     const filename = name.split(" ").map((word) =>
       word[0].toUpperCase() + word.slice(1)
@@ -136,6 +149,8 @@ function preload() {
   this.load.json("ui-state", UI_STATE_URL);
 }
 
+// Build one static scene from the loaded snapshot. Updating the JSON requires
+// a page reload; there is no polling or movement animation yet.
 function create() {
   if (loadFailed) {
     return;
@@ -143,6 +158,7 @@ function create() {
 
   tilemap = this.make.tilemap({ key: "ville-map" });
   const agents = this.cache.json.get("ui-state");
+  // Positions are zero-based tile indices, not pixel coordinates.
   for (const [name, agent] of Object.entries(agents)) {
     const tile = agent?.tile;
     if (!tile || !Number.isInteger(tile.x) || !Number.isInteger(tile.y) ||
@@ -152,12 +168,15 @@ function create() {
     }
   }
   locationMetadata = this.cache.json.get("location-metadata");
+  // Keep the underlying technical layer data for location lookup, even when
+  // the corresponding overlay is not visible.
   locationLayers = {
     sector: getMapLayerData("Sector Blocks"),
     arena: getMapLayerData("Arena Blocks"),
     object: getMapLayerData("Object Interaction Blocks")
   };
 
+  // Connect the map's tileset definitions to the images loaded by key.
   const tilesets = tilemap.tilesets.map((tileset) => {
     const imageTileset = tilemap.addTilesetImage(tileset.name, tileset.name);
     if (!imageTileset) {
@@ -166,6 +185,8 @@ function create() {
     return imageTileset;
   });
 
+  // Create layers in map order. Technical layers start hidden and receive
+  // translucent checkboxes; visual layers retain their Tiled visibility.
   renderedLayers = tilemap.layers.map((layerData) => {
     const layer = tilemap.createLayer(layerData.name, tilesets, 0, 0);
     if (!layer) {
@@ -182,6 +203,8 @@ function create() {
   });
   updateLayerVisibility();
 
+  // Center each sprite on its tile. Frame 1 is the middle frame of the
+  // downward-facing row (standing); depth 1000 draws agents over map layers.
   Object.entries(agents).forEach(([name, { tile }]) => {
     this.add.sprite(
       (tile.x + 0.5) * tilemap.tileWidth,
@@ -199,6 +222,8 @@ function create() {
     `Loaded ${tilemap.width} × ${tilemap.height} tiles · ${tilemap.layers.length} layers · ${tilemap.tilesets.length} tilesets`
   );
 
+  // Dragging pans the camera; dividing screen movement by zoom converts it
+  // into world-space movement so dragging feels consistent at any zoom.
   this.input.on("pointerdown", (pointer) => {
     isDragging = true;
     gameContainer.classList.add("is-dragging");
@@ -231,6 +256,7 @@ function create() {
 
 }
 
+// Phaser stores each map layer as rows of tiles; this returns that grid.
 function getMapLayerData(name) {
   const layer = tilemap.layers.find((item) => item.name === name);
   if (!layer) {
@@ -239,6 +265,8 @@ function getMapLayerData(name) {
   return layer.data;
 }
 
+// Build sector → arena → object navigation from the metadata, retaining
+// references to the entries so search can hide or expand them later.
 function createLocationTree() {
   if (!Array.isArray(locationMetadata.locations)) {
     throw new Error("Location metadata does not contain a locations list");
@@ -281,6 +309,8 @@ function createLocationTree() {
   });
 }
 
+// A branch is a native expandable details element whose summary selects its
+// map bounds; it is used for both sectors and arenas.
 function createLocationBranch(name, bounds, className, count) {
   const details = document.createElement("details");
   details.className = `location-branch ${className}`;
@@ -315,6 +345,8 @@ function createLocationBranch(name, bounds, className, count) {
   return { name, bounds, details, summary, children, arenas: [], objects: [] };
 }
 
+// A match at a parent shows its descendants; a child match keeps its ancestors
+// visible and opens the relevant branches.
 function filterLocationTree() {
   const query = locationSearch.value.trim().toLocaleLowerCase();
   let visibleCount = 0;
@@ -355,6 +387,7 @@ function filterLocationTree() {
   locationTree.hidden = visibleCount === 0;
 }
 
+// Highlight the chosen tree item and move the camera to its recorded bounds.
 function selectLocation(element, bounds) {
   if (selectedLocation) {
     selectedLocation.classList.remove("selected");
@@ -364,6 +397,7 @@ function selectLocation(element, bounds) {
   navigateToBounds(bounds);
 }
 
+// Bounds are in tiles; convert to pixels and fit them with padding in the view.
 function navigateToBounds(bounds) {
   if (!bounds || !mapCamera || !tilemap) {
     return;
@@ -385,6 +419,8 @@ function navigateToBounds(bounds) {
   );
 }
 
+// Convert the pointer from screen space to map space, then look up the tile's
+// sector, arena, and object IDs in the technical layers and metadata.
 function updateHoverInfo(pointer) {
   const worldPoint = mapCamera.getWorldPoint(pointer.x, pointer.y);
   const tileX = Math.floor(worldPoint.x / tilemap.tileWidth);
@@ -400,6 +436,7 @@ function updateHoverInfo(pointer) {
   }
   lastHoveredTile = tileKey;
 
+  // The layer stores numeric tile indices; metadata maps those indices to names.
   const getName = (layer, lookup) => {
     const tile = layer[tileY][tileX];
     return lookup[String(tile.index)] || "—";
@@ -408,6 +445,7 @@ function updateHoverInfo(pointer) {
   const sector = getName(locationLayers.sector, locationMetadata.sector);
   const arena = getName(locationLayers.arena, locationMetadata.arena);
   const object = getName(locationLayers.object, locationMetadata.object);
+  // The status bar displays one-based tile numbers, unlike ui-state.json.
   document.getElementById("hover-tile").textContent = `${tileX + 1}, ${tileY + 1}`;
   document.getElementById("hover-sector").textContent = sector;
   document.getElementById("hover-arena").textContent = arena;
@@ -417,6 +455,7 @@ function updateHoverInfo(pointer) {
   locationToggle.title = path || "No named location";
 }
 
+// Clear the last tile and status display when the pointer is outside map bounds.
 function resetHoverInfo() {
   lastHoveredTile = null;
   document.getElementById("hover-tile").textContent = "—";
@@ -427,6 +466,7 @@ function resetHoverInfo() {
   locationToggle.title = "Location details";
 }
 
+// Wire HTML buttons and keyboard shortcuts to camera and pane actions.
 function enableControls() {
   document.getElementById("zoom-in").addEventListener("click", () => {
     setZoom(mapCamera.zoom * 1.25);
@@ -458,6 +498,8 @@ function enableControls() {
   });
 }
 
+// Resizing updates a CSS width variable and supports both pointer and keyboard
+// input. Clamp the width to keep room for the map and update accessibility values.
 function enablePaneResizing(handle, side, pane, minimum, maximum) {
   const setWidth = (width) => {
     const availableMaximum = side === "left"
@@ -519,6 +561,7 @@ function enablePaneResizing(handle, side, pane, minimum, maximum) {
   });
 }
 
+// Keep CSS layout, button labels, and accessibility state in sync.
 function setPaneCollapsed(side, pane, button, label) {
   const isCollapsed = !pane.classList.contains("is-collapsed");
   pane.classList.toggle("is-collapsed", isCollapsed);
@@ -530,6 +573,7 @@ function setPaneCollapsed(side, pane, button, label) {
   button.setAttribute("aria-expanded", String(!isCollapsed));
 }
 
+// Show or hide the status-bar location details popover.
 function setLocationPanelOpen(isOpen) {
   locationPanel.hidden = !isOpen;
   const label = `${isOpen ? "Hide" : "Show"} location details`;
@@ -538,6 +582,7 @@ function setLocationPanelOpen(isOpen) {
   locationToggle.setAttribute("aria-expanded", String(isOpen));
 }
 
+// Add one checkbox for a technical map layer.
 function createOverlayOption(layerName) {
   const label = document.createElement("label");
   label.className = "overlay-option";
@@ -555,6 +600,7 @@ function createOverlayOption(layerName) {
   return checkbox;
 }
 
+// Technical visibility follows the checkboxes; visual visibility follows Tiled.
 function updateLayerVisibility() {
   renderedLayers.forEach(({ layer, layerData, isTechnical, overlayCheckbox }) => {
     const visible = isTechnical
@@ -564,6 +610,7 @@ function updateLayerVisibility() {
   });
 }
 
+// Center and zoom the camera to fit the entire map inside the viewport.
 function fitMap() {
   if (!mapCamera || !tilemap) {
     return;
@@ -578,10 +625,12 @@ function fitMap() {
   mapCamera.centerOn(tilemap.widthInPixels / 2, tilemap.heightInPixels / 2);
 }
 
+// Bound every zoom request to avoid unusably small or large values.
 function setZoom(zoom) {
   mapCamera.setZoom(Phaser.Math.Clamp(zoom, 0.05, 8));
 }
 
+// The header communicates whether the scene loaded successfully.
 function setStatus(message) {
   statusElement.textContent = message;
   statusElement.classList.remove("error");
