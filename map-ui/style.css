@@ -208,7 +208,7 @@ button {
   margin: 0;
   border: 0;
   border-radius: 5px 0 0 5px;
-  background: transparent;
+  background: rgba(18, 25, 35, 0.65);
   color: #c4d0dc;
   box-shadow: none;
 }
