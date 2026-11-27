@@ -1,0 +1,3038 @@
+{
+  "world": "the Ville",
+  "sector": {
+    "32135": "artist's co-living space",
+    "32145": "Arthur Burton's apartment",
+    "32155": "Ryan Park's apartment",
+    "32165": "Isabella Rodriguez's apartment",
+    "32175": "Giorgio Rossi's apartment",
+    "32185": "Carlos Gomez's apartment",
+    "32195": "The Rose and Crown Pub",
+    "32136": "Hobbs Cafe",
+    "32146": "Oak Hill College",
+    "32156": "Johnson Park",
+    "32166": "Harvey Oak Supply Store",
+    "32176": "The Willows Market and Pharmacy",
+    "32186": "Adam Smith's house",
+    "32196": "Yuriko Yamamoto's house",
+    "32137": "Moore family's house",
+    "32147": "Tamara Taylor and Carmen Ortiz's house",
+    "32157": "Moreno family's house",
+    "32167": "Lin family's house",
+    "32177": "Dorm for Oak Hill College"
+  },
+  "arena": {
+    "32138": "Latoya Williams's room",
+    "32148": "Latoya Williams's bathroom",
+    "32158": "Rajiv Patel's room",
+    "32168": "Rajiv Patel's bathroom",
+    "32178": "Abigail Chen's room",
+    "32188": "Abigail Chen's bathroom",
+    "32198": "Francisco Lopez's room",
+    "32139": "Francisco Lopez's bathroom",
+    "32149": "Hailey Johnson's room",
+    "32159": "Hailey Johnson's bathroom",
+    "32179": "common room",
+    "32189": "kitchen",
+    "32199": "main room",
+    "32140": "bathroom",
+    "32150": "main room",
+    "32160": "bathroom",
+    "32170": "main room",
+    "32180": "bathroom",
+    "32190": "main room",
+    "32200": "bathroom",
+    "32141": "main room",
+    "32151": "bathroom",
+    "32161": "pub",
+    "32171": "cafe",
+    "32181": "classroom",
+    "32191": "library",
+    "32201": "hallway",
+    "32142": "park",
+    "32152": "supply store",
+    "32162": "store",
+    "32193": "main room",
+    "32203": "bathroom",
+    "32174": "main room",
+    "32184": "bathroom",
+    "32194": "main room",
+    "32204": "bathroom",
+    "32172": "Klaus Mueller's room",
+    "32182": "Maria Lopez's room",
+    "32192": "Ayesha Khan's room",
+    "32202": "Wolfgang Schulz's room",
+    "32143": "man's bathroom",
+    "32153": "woman's bathroom",
+    "32163": "common room",
+    "32173": "kitchen",
+    "32183": "garden",
+    "32205": "Tamara Taylor's room",
+    "32215": "Carmen Ortiz's room",
+    "32225": "common room",
+    "32235": "kitchen",
+    "32245": "bathroom",
+    "32255": "garden",
+    "32265": "Tom and Jane Moreno's bedroom",
+    "32275": "empty bedroom",
+    "32206": "common room",
+    "32216": "kitchen",
+    "32226": "bathroom",
+    "32236": "garden",
+    "32246": "Mei and John Lin's bedroom",
+    "32256": "Eddy Lin's bedroom",
+    "32266": "common room",
+    "32276": "kitchen",
+    "32207": "bathroom",
+    "32217": "garden"
+  },
+  "object": {
+    "32227": "bed",
+    "32237": "desk",
+    "32247": "closet",
+    "32257": "shelf",
+    "32267": "easel",
+    "32277": "bathroom sink",
+    "32208": "shower",
+    "32218": "toilet",
+    "32228": "kitchen sink",
+    "32238": "refrigerator",
+    "32248": "toaster",
+    "32258": "cooking area",
+    "32268": "common room table",
+    "32278": "common room sofa",
+    "32209": "guitar",
+    "32219": "microphone",
+    "32229": "bar customer seating",
+    "32239": "behind the bar counter",
+    "32249": "behind the cafe counter",
+    "32259": "cafe customer seating",
+    "32269": "piano",
+    "32279": "blackboard",
+    "32210": "game console",
+    "32220": "computer desk",
+    "32230": "computer",
+    "32240": "library sofa",
+    "32250": "bookshelf",
+    "32260": "library table",
+    "32270": "classroom student seating",
+    "32280": "classroom podium",
+    "32211": "behind the pharmacy counter",
+    "32221": "behind the grocery counter",
+    "32231": "pharmacy store shelf",
+    "32241": "grocery store shelf",
+    "32251": "pharmacy store counter",
+    "32261": "grocery store counter",
+    "32271": "supply store product shelf",
+    "32281": "behind the supply store counter",
+    "32212": "supply store counter",
+    "32222": "dorm garden",
+    "32232": "house garden",
+    "32242": "garden chair",
+    "32252": "park garden",
+    "32262": "harp",
+    "32272": "lifting weight",
+    "32282": "pool table"
+  },
+  "locations": [
+    {
+      "name": "artist's co-living space",
+      "bounds": {
+        "x": 14,
+        "y": 17,
+        "width": 30,
+        "height": 19
+      },
+      "arenas": [
+        {
+          "name": "Latoya Williams's room",
+          "bounds": {
+            "x": 15,
+            "y": 17,
+            "width": 5,
+            "height": 8
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 16,
+                "y": 18,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 17,
+                "y": 19,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 16,
+                "y": 20,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "shelf",
+              "bounds": {
+                "x": 16,
+                "y": 21,
+                "width": 1,
+                "height": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "Latoya Williams's bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 17,
+            "width": 3,
+            "height": 6
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 21,
+                "y": 21,
+                "width": 1,
+                "height": 2
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 20,
+                "y": 18,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 22,
+                "y": 18,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Rajiv Patel's room",
+          "bounds": {
+            "x": 25,
+            "y": 17,
+            "width": 5,
+            "height": 8
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 25,
+                "y": 18,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 27,
+                "y": 19,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "easel",
+              "bounds": {
+                "x": 25,
+                "y": 22,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "guitar",
+              "bounds": {
+                "x": 28,
+                "y": 21,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Rajiv Patel's bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 17,
+            "width": 3,
+            "height": 6
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 31,
+                "y": 21,
+                "width": 1,
+                "height": 2
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 30,
+                "y": 18,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 32,
+                "y": 18,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Abigail Chen's room",
+          "bounds": {
+            "x": 35,
+            "y": 17,
+            "width": 8,
+            "height": 8
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 36,
+                "y": 18,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 40,
+                "y": 18,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 36,
+                "y": 22,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Abigail Chen's bathroom",
+          "bounds": {
+            "x": 38,
+            "y": 20,
+            "width": 5,
+            "height": 3
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 38,
+                "y": 21,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 41,
+                "y": 21,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 40,
+                "y": 21,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Francisco Lopez's room",
+          "bounds": {
+            "x": 15,
+            "y": 27,
+            "width": 6,
+            "height": 6
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 16,
+                "y": 32,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 16,
+                "y": 29,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "easel",
+              "bounds": {
+                "x": 17,
+                "y": 31,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "shelf",
+              "bounds": {
+                "x": 15,
+                "y": 28,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Francisco Lopez's bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 27,
+            "width": 3,
+            "height": 6
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 21,
+                "y": 29,
+                "width": 1,
+                "height": 2
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 20,
+                "y": 32,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 22,
+                "y": 28,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Hailey Johnson's room",
+          "bounds": {
+            "x": 25,
+            "y": 27,
+            "width": 6,
+            "height": 6
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 26,
+                "y": 32,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 25,
+                "y": 29,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 26,
+                "y": 30,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "easel",
+              "bounds": {
+                "x": 26,
+                "y": 28,
+                "width": 2,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Hailey Johnson's bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 27,
+            "width": 3,
+            "height": 6
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 31,
+                "y": 29,
+                "width": 1,
+                "height": 2
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 30,
+                "y": 32,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 32,
+                "y": 28,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "common room",
+          "bounds": {
+            "x": 34,
+            "y": 26,
+            "width": 9,
+            "height": 9
+          },
+          "objects": [
+            {
+              "name": "common room sofa",
+              "bounds": {
+                "x": 35,
+                "y": 30,
+                "width": 2,
+                "height": 4
+              }
+            },
+            {
+              "name": "common room table",
+              "bounds": {
+                "x": 36,
+                "y": 28,
+                "width": 4,
+                "height": 3
+              }
+            }
+          ]
+        },
+        {
+          "name": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 25,
+            "width": 8,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "cooking area",
+              "bounds": {
+                "x": 41,
+                "y": 26,
+                "width": 1,
+                "height": 3
+              }
+            },
+            {
+              "name": "kitchen sink",
+              "bounds": {
+                "x": 41,
+                "y": 25,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "refrigerator",
+              "bounds": {
+                "x": 35,
+                "y": 25,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toaster",
+              "bounds": {
+                "x": 40,
+                "y": 25,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arthur Burton's apartment",
+      "bounds": {
+        "x": 52,
+        "y": 13,
+        "width": 12,
+        "height": 7
+      },
+      "arenas": [
+        {
+          "name": "main room",
+          "bounds": {
+            "x": 53,
+            "y": 13,
+            "width": 7,
+            "height": 7
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 53,
+                "y": 14,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 56,
+                "y": 14,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 54,
+                "y": 17,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "guitar",
+              "bounds": {
+                "x": 53,
+                "y": 16,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "refrigerator",
+              "bounds": {
+                "x": 55,
+                "y": 14,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "shelf",
+              "bounds": {
+                "x": 57,
+                "y": 14,
+                "width": 2,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "bathroom",
+          "bounds": {
+            "x": 60,
+            "y": 13,
+            "width": 3,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 61,
+                "y": 16,
+                "width": 1,
+                "height": 2
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 60,
+                "y": 14,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 62,
+                "y": 14,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ryan Park's apartment",
+      "bounds": {
+        "x": 64,
+        "y": 13,
+        "width": 7,
+        "height": 14
+      },
+      "arenas": [
+        {
+          "name": "main room",
+          "bounds": {
+            "x": 65,
+            "y": 18,
+            "width": 5,
+            "height": 9
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 65,
+                "y": 19,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 68,
+                "y": 24,
+                "width": 2,
+                "height": 3
+              }
+            },
+            {
+              "name": "computer desk",
+              "bounds": {
+                "x": 66,
+                "y": 24,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "cooking area",
+              "bounds": {
+                "x": 68,
+                "y": 21,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "kitchen sink",
+              "bounds": {
+                "x": 68,
+                "y": 22,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "refrigerator",
+              "bounds": {
+                "x": 69,
+                "y": 19,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "bathroom",
+          "bounds": {
+            "x": 65,
+            "y": 13,
+            "width": 5,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 67,
+                "y": 14,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 65,
+                "y": 14,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 69,
+                "y": 14,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Isabella Rodriguez's apartment",
+      "bounds": {
+        "x": 71,
+        "y": 13,
+        "width": 14,
+        "height": 6
+      },
+      "arenas": [
+        {
+          "name": "main room",
+          "bounds": {
+            "x": 72,
+            "y": 13,
+            "width": 9,
+            "height": 6
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 72,
+                "y": 14,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 76,
+                "y": 14,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 73,
+                "y": 16,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "refrigerator",
+              "bounds": {
+                "x": 75,
+                "y": 14,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "shelf",
+              "bounds": {
+                "x": 78,
+                "y": 14,
+                "width": 2,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "bathroom",
+          "bounds": {
+            "x": 81,
+            "y": 13,
+            "width": 3,
+            "height": 4
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 82,
+                "y": 16,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 81,
+                "y": 14,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 83,
+                "y": 14,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Giorgio Rossi's apartment",
+      "bounds": {
+        "x": 85,
+        "y": 12,
+        "width": 7,
+        "height": 14
+      },
+      "arenas": [
+        {
+          "name": "main room",
+          "bounds": {
+            "x": 86,
+            "y": 17,
+            "width": 5,
+            "height": 9
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 86,
+                "y": 18,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "blackboard",
+              "bounds": {
+                "x": 86,
+                "y": 24,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 89,
+                "y": 23,
+                "width": 2,
+                "height": 3
+              }
+            },
+            {
+              "name": "cooking area",
+              "bounds": {
+                "x": 89,
+                "y": 20,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 87,
+                "y": 21,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "kitchen sink",
+              "bounds": {
+                "x": 89,
+                "y": 21,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "refrigerator",
+              "bounds": {
+                "x": 90,
+                "y": 18,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "bathroom",
+          "bounds": {
+            "x": 86,
+            "y": 12,
+            "width": 5,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 88,
+                "y": 13,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 86,
+                "y": 13,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 90,
+                "y": 13,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Carlos Gomez's apartment",
+      "bounds": {
+        "x": 92,
+        "y": 12,
+        "width": 7,
+        "height": 14
+      },
+      "arenas": [
+        {
+          "name": "main room",
+          "bounds": {
+            "x": 93,
+            "y": 17,
+            "width": 5,
+            "height": 9
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 93,
+                "y": 18,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 96,
+                "y": 23,
+                "width": 2,
+                "height": 3
+              }
+            },
+            {
+              "name": "cooking area",
+              "bounds": {
+                "x": 96,
+                "y": 20,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 94,
+                "y": 21,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "kitchen sink",
+              "bounds": {
+                "x": 96,
+                "y": 21,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "refrigerator",
+              "bounds": {
+                "x": 97,
+                "y": 18,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "bathroom",
+          "bounds": {
+            "x": 93,
+            "y": 12,
+            "width": 5,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 95,
+                "y": 13,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 93,
+                "y": 13,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 97,
+                "y": 13,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Rose and Crown Pub",
+      "bounds": {
+        "x": 52,
+        "y": 18,
+        "width": 12,
+        "height": 9
+      },
+      "arenas": [
+        {
+          "name": "pub",
+          "bounds": {
+            "x": 53,
+            "y": 20,
+            "width": 10,
+            "height": 7
+          },
+          "objects": [
+            {
+              "name": "bar customer seating",
+              "bounds": {
+                "x": 55,
+                "y": 23,
+                "width": 7,
+                "height": 1
+              }
+            },
+            {
+              "name": "behind the bar counter",
+              "bounds": {
+                "x": 57,
+                "y": 20,
+                "width": 3,
+                "height": 1
+              }
+            },
+            {
+              "name": "cooking area",
+              "bounds": {
+                "x": 61,
+                "y": 20,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "kitchen sink",
+              "bounds": {
+                "x": 60,
+                "y": 20,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "microphone",
+              "bounds": {
+                "x": 61,
+                "y": 25,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "refrigerator",
+              "bounds": {
+                "x": 55,
+                "y": 20,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "shelf",
+              "bounds": {
+                "x": 54,
+                "y": 25,
+                "width": 1,
+                "height": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hobbs Cafe",
+      "bounds": {
+        "x": 71,
+        "y": 17,
+        "width": 14,
+        "height": 10
+      },
+      "arenas": [
+        {
+          "name": "cafe",
+          "bounds": {
+            "x": 72,
+            "y": 19,
+            "width": 12,
+            "height": 8
+          },
+          "objects": [
+            {
+              "name": "behind the cafe counter",
+              "bounds": {
+                "x": 78,
+                "y": 19,
+                "width": 4,
+                "height": 1
+              }
+            },
+            {
+              "name": "cafe customer seating",
+              "bounds": {
+                "x": 72,
+                "y": 21,
+                "width": 11,
+                "height": 5
+              }
+            },
+            {
+              "name": "cooking area",
+              "bounds": {
+                "x": 75,
+                "y": 19,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "kitchen sink",
+              "bounds": {
+                "x": 77,
+                "y": 19,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "piano",
+              "bounds": {
+                "x": 82,
+                "y": 26,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "refrigerator",
+              "bounds": {
+                "x": 72,
+                "y": 19,
+                "width": 2,
+                "height": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Oak Hill College",
+      "bounds": {
+        "x": 107,
+        "y": 19,
+        "width": 19,
+        "height": 16
+      },
+      "arenas": [
+        {
+          "name": "classroom",
+          "bounds": {
+            "x": 108,
+            "y": 19,
+            "width": 8,
+            "height": 11
+          },
+          "objects": [
+            {
+              "name": "blackboard",
+              "bounds": {
+                "x": 108,
+                "y": 20,
+                "width": 4,
+                "height": 1
+              }
+            },
+            {
+              "name": "classroom podium",
+              "bounds": {
+                "x": 108,
+                "y": 23,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "classroom student seating",
+              "bounds": {
+                "x": 112,
+                "y": 21,
+                "width": 4,
+                "height": 5
+              }
+            }
+          ]
+        },
+        {
+          "name": "library",
+          "bounds": {
+            "x": 118,
+            "y": 19,
+            "width": 7,
+            "height": 11
+          },
+          "objects": [
+            {
+              "name": "bookshelf",
+              "bounds": {
+                "x": 121,
+                "y": 20,
+                "width": 4,
+                "height": 8
+              }
+            },
+            {
+              "name": "library sofa",
+              "bounds": {
+                "x": 118,
+                "y": 20,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "library table",
+              "bounds": {
+                "x": 119,
+                "y": 22,
+                "width": 4,
+                "height": 3
+              }
+            }
+          ]
+        },
+        {
+          "name": "hallway",
+          "bounds": {
+            "x": 108,
+            "y": 30,
+            "width": 17,
+            "height": 5
+          },
+          "objects": []
+        }
+      ]
+    },
+    {
+      "name": "Johnson Park",
+      "bounds": {
+        "x": 20,
+        "y": 41,
+        "width": 16,
+        "height": 11
+      },
+      "arenas": [
+        {
+          "name": "park",
+          "bounds": {
+            "x": 21,
+            "y": 41,
+            "width": 15,
+            "height": 11
+          },
+          "objects": [
+            {
+              "name": "park garden",
+              "bounds": {
+                "x": 21,
+                "y": 42,
+                "width": 14,
+                "height": 9
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Harvey Oak Supply Store",
+      "bounds": {
+        "x": 56,
+        "y": 42,
+        "width": 16,
+        "height": 12
+      },
+      "arenas": [
+        {
+          "name": "supply store",
+          "bounds": {
+            "x": 57,
+            "y": 42,
+            "width": 14,
+            "height": 12
+          },
+          "objects": [
+            {
+              "name": "behind the supply store counter",
+              "bounds": {
+                "x": 67,
+                "y": 44,
+                "width": 3,
+                "height": 1
+              }
+            },
+            {
+              "name": "supply store counter",
+              "bounds": {
+                "x": 67,
+                "y": 46,
+                "width": 3,
+                "height": 1
+              }
+            },
+            {
+              "name": "supply store product shelf",
+              "bounds": {
+                "x": 57,
+                "y": 43,
+                "width": 8,
+                "height": 10
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Willows Market and Pharmacy",
+      "bounds": {
+        "x": 74,
+        "y": 42,
+        "width": 21,
+        "height": 12
+      },
+      "arenas": [
+        {
+          "name": "store",
+          "bounds": {
+            "x": 75,
+            "y": 42,
+            "width": 19,
+            "height": 12
+          },
+          "objects": [
+            {
+              "name": "behind the grocery counter",
+              "bounds": {
+                "x": 88,
+                "y": 44,
+                "width": 4,
+                "height": 1
+              }
+            },
+            {
+              "name": "behind the pharmacy counter",
+              "bounds": {
+                "x": 75,
+                "y": 51,
+                "width": 1,
+                "height": 3
+              }
+            },
+            {
+              "name": "grocery store counter",
+              "bounds": {
+                "x": 88,
+                "y": 46,
+                "width": 4,
+                "height": 1
+              }
+            },
+            {
+              "name": "grocery store shelf",
+              "bounds": {
+                "x": 81,
+                "y": 49,
+                "width": 13,
+                "height": 4
+              }
+            },
+            {
+              "name": "pharmacy store counter",
+              "bounds": {
+                "x": 78,
+                "y": 51,
+                "width": 1,
+                "height": 3
+              }
+            },
+            {
+              "name": "pharmacy store shelf",
+              "bounds": {
+                "x": 76,
+                "y": 45,
+                "width": 4,
+                "height": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Adam Smith's house",
+      "bounds": {
+        "x": 19,
+        "y": 58,
+        "width": 7,
+        "height": 13
+      },
+      "arenas": [
+        {
+          "name": "main room",
+          "bounds": {
+            "x": 20,
+            "y": 58,
+            "width": 5,
+            "height": 8
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 20,
+                "y": 65,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 20,
+                "y": 59,
+                "width": 4,
+                "height": 2
+              }
+            },
+            {
+              "name": "cooking area",
+              "bounds": {
+                "x": 23,
+                "y": 61,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 21,
+                "y": 62,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "kitchen sink",
+              "bounds": {
+                "x": 23,
+                "y": 62,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "refrigerator",
+              "bounds": {
+                "x": 23,
+                "y": 65,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 66,
+            "width": 5,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 20,
+                "y": 68,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 20,
+                "y": 70,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 24,
+                "y": 68,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Yuriko Yamamoto's house",
+      "bounds": {
+        "x": 27,
+        "y": 58,
+        "width": 7,
+        "height": 13
+      },
+      "arenas": [
+        {
+          "name": "main room",
+          "bounds": {
+            "x": 28,
+            "y": 58,
+            "width": 5,
+            "height": 8
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 28,
+                "y": 65,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 28,
+                "y": 60,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "cooking area",
+              "bounds": {
+                "x": 31,
+                "y": 61,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 31,
+                "y": 59,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "kitchen sink",
+              "bounds": {
+                "x": 31,
+                "y": 62,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "refrigerator",
+              "bounds": {
+                "x": 31,
+                "y": 65,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "shelf",
+              "bounds": {
+                "x": 29,
+                "y": 62,
+                "width": 1,
+                "height": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "bathroom",
+          "bounds": {
+            "x": 28,
+            "y": 66,
+            "width": 5,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 28,
+                "y": 68,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 28,
+                "y": 70,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 32,
+                "y": 68,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Moore family's house",
+      "bounds": {
+        "x": 35,
+        "y": 58,
+        "width": 7,
+        "height": 13
+      },
+      "arenas": [
+        {
+          "name": "main room",
+          "bounds": {
+            "x": 36,
+            "y": 58,
+            "width": 5,
+            "height": 8
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 36,
+                "y": 65,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 36,
+                "y": 60,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "common room sofa",
+              "bounds": {
+                "x": 40,
+                "y": 60,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "cooking area",
+              "bounds": {
+                "x": 39,
+                "y": 61,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 37,
+                "y": 61,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "kitchen sink",
+              "bounds": {
+                "x": 39,
+                "y": 62,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "refrigerator",
+              "bounds": {
+                "x": 39,
+                "y": 65,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "bathroom",
+          "bounds": {
+            "x": 36,
+            "y": 66,
+            "width": 5,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 36,
+                "y": 68,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 36,
+                "y": 70,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 40,
+                "y": 68,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tamara Taylor and Carmen Ortiz's house",
+      "bounds": {
+        "x": 50,
+        "y": 64,
+        "width": 14,
+        "height": 19
+      },
+      "arenas": [
+        {
+          "name": "Tamara Taylor's room",
+          "bounds": {
+            "x": 51,
+            "y": 73,
+            "width": 5,
+            "height": 3
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 54,
+                "y": 74,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 51,
+                "y": 73,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 53,
+                "y": 74,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Carmen Ortiz's room",
+          "bounds": {
+            "x": 57,
+            "y": 73,
+            "width": 6,
+            "height": 3
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 57,
+                "y": 74,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 61,
+                "y": 74,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "guitar",
+              "bounds": {
+                "x": 62,
+                "y": 75,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "common room",
+          "bounds": {
+            "x": 51,
+            "y": 65,
+            "width": 8,
+            "height": 7
+          },
+          "objects": [
+            {
+              "name": "common room table",
+              "bounds": {
+                "x": 52,
+                "y": 67,
+                "width": 4,
+                "height": 3
+              }
+            },
+            {
+              "name": "shelf",
+              "bounds": {
+                "x": 51,
+                "y": 65,
+                "width": 3,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "kitchen",
+          "bounds": {
+            "x": 57,
+            "y": 65,
+            "width": 2,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "cooking area",
+              "bounds": {
+                "x": 57,
+                "y": 66,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "kitchen sink",
+              "bounds": {
+                "x": 57,
+                "y": 65,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "refrigerator",
+              "bounds": {
+                "x": 57,
+                "y": 68,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "bathroom",
+          "bounds": {
+            "x": 60,
+            "y": 65,
+            "width": 3,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 61,
+                "y": 65,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 60,
+                "y": 67,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 60,
+                "y": 65,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "garden",
+          "bounds": {
+            "x": 52,
+            "y": 78,
+            "width": 10,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "house garden",
+              "bounds": {
+                "x": 52,
+                "y": 78,
+                "width": 10,
+                "height": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Moreno family's house",
+      "bounds": {
+        "x": 68,
+        "y": 64,
+        "width": 14,
+        "height": 19
+      },
+      "arenas": [
+        {
+          "name": "Tom and Jane Moreno's bedroom",
+          "bounds": {
+            "x": 69,
+            "y": 73,
+            "width": 5,
+            "height": 3
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 72,
+                "y": 74,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 69,
+                "y": 73,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 71,
+                "y": 74,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "empty bedroom",
+          "bounds": {
+            "x": 75,
+            "y": 73,
+            "width": 6,
+            "height": 3
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 75,
+                "y": 74,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 79,
+                "y": 74,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "guitar",
+              "bounds": {
+                "x": 80,
+                "y": 75,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "common room",
+          "bounds": {
+            "x": 69,
+            "y": 65,
+            "width": 8,
+            "height": 6
+          },
+          "objects": [
+            {
+              "name": "common room table",
+              "bounds": {
+                "x": 70,
+                "y": 67,
+                "width": 4,
+                "height": 3
+              }
+            },
+            {
+              "name": "harp",
+              "bounds": {
+                "x": 71,
+                "y": 66,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "shelf",
+              "bounds": {
+                "x": 69,
+                "y": 65,
+                "width": 2,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "kitchen",
+          "bounds": {
+            "x": 75,
+            "y": 65,
+            "width": 2,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "cooking area",
+              "bounds": {
+                "x": 75,
+                "y": 66,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "kitchen sink",
+              "bounds": {
+                "x": 75,
+                "y": 65,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "refrigerator",
+              "bounds": {
+                "x": 75,
+                "y": 68,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "bathroom",
+          "bounds": {
+            "x": 78,
+            "y": 65,
+            "width": 3,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 79,
+                "y": 65,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 78,
+                "y": 67,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 78,
+                "y": 65,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "garden",
+          "bounds": {
+            "x": 70,
+            "y": 78,
+            "width": 10,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "garden chair",
+              "bounds": {
+                "x": 72,
+                "y": 79,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "house garden",
+              "bounds": {
+                "x": 70,
+                "y": 78,
+                "width": 10,
+                "height": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lin family's house",
+      "bounds": {
+        "x": 86,
+        "y": 64,
+        "width": 14,
+        "height": 19
+      },
+      "arenas": [
+        {
+          "name": "Mei and John Lin's bedroom",
+          "bounds": {
+            "x": 87,
+            "y": 73,
+            "width": 5,
+            "height": 3
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 90,
+                "y": 74,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 87,
+                "y": 73,
+                "width": 2,
+                "height": 3
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 89,
+                "y": 74,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Eddy Lin's bedroom",
+          "bounds": {
+            "x": 93,
+            "y": 73,
+            "width": 6,
+            "height": 3
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 93,
+                "y": 74,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 97,
+                "y": 73,
+                "width": 2,
+                "height": 3
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 95,
+                "y": 74,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "common room",
+          "bounds": {
+            "x": 87,
+            "y": 65,
+            "width": 8,
+            "height": 6
+          },
+          "objects": [
+            {
+              "name": "common room table",
+              "bounds": {
+                "x": 88,
+                "y": 67,
+                "width": 4,
+                "height": 3
+              }
+            },
+            {
+              "name": "shelf",
+              "bounds": {
+                "x": 87,
+                "y": 65,
+                "width": 3,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "kitchen",
+          "bounds": {
+            "x": 93,
+            "y": 65,
+            "width": 2,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "cooking area",
+              "bounds": {
+                "x": 93,
+                "y": 66,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "kitchen sink",
+              "bounds": {
+                "x": 93,
+                "y": 65,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "refrigerator",
+              "bounds": {
+                "x": 93,
+                "y": 68,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "bathroom",
+          "bounds": {
+            "x": 96,
+            "y": 65,
+            "width": 3,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 97,
+                "y": 65,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 96,
+                "y": 67,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 96,
+                "y": 65,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "garden",
+          "bounds": {
+            "x": 88,
+            "y": 78,
+            "width": 10,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "house garden",
+              "bounds": {
+                "x": 88,
+                "y": 78,
+                "width": 10,
+                "height": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dorm for Oak Hill College",
+      "bounds": {
+        "x": 105,
+        "y": 31,
+        "width": 29,
+        "height": 32
+      },
+      "arenas": [
+        {
+          "name": "Klaus Mueller's room",
+          "bounds": {
+            "x": 126,
+            "y": 44,
+            "width": 7,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 126,
+                "y": 46,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 131,
+                "y": 45,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 131,
+                "y": 46,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "game console",
+              "bounds": {
+                "x": 128,
+                "y": 46,
+                "width": 2,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Maria Lopez's room",
+          "bounds": {
+            "x": 122,
+            "y": 52,
+            "width": 6,
+            "height": 6
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 123,
+                "y": 57,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "blackboard",
+              "bounds": {
+                "x": 127,
+                "y": 56,
+                "width": 1,
+                "height": 2
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 122,
+                "y": 54,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "computer",
+              "bounds": {
+                "x": 126,
+                "y": 54,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 123,
+                "y": 55,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Ayesha Khan's room",
+          "bounds": {
+            "x": 114,
+            "y": 56,
+            "width": 6,
+            "height": 7
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 118,
+                "y": 61,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 114,
+                "y": 60,
+                "width": 2,
+                "height": 3
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 118,
+                "y": 57,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "shelf",
+              "bounds": {
+                "x": 114,
+                "y": 57,
+                "width": 2,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Wolfgang Schulz's room",
+          "bounds": {
+            "x": 106,
+            "y": 56,
+            "width": 6,
+            "height": 7
+          },
+          "objects": [
+            {
+              "name": "bed",
+              "bounds": {
+                "x": 107,
+                "y": 62,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "closet",
+              "bounds": {
+                "x": 111,
+                "y": 60,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "desk",
+              "bounds": {
+                "x": 107,
+                "y": 57,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "game console",
+              "bounds": {
+                "x": 109,
+                "y": 61,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "lifting weight",
+              "bounds": {
+                "x": 110,
+                "y": 58,
+                "width": 2,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "man's bathroom",
+          "bounds": {
+            "x": 106,
+            "y": 49,
+            "width": 6,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 109,
+                "y": 50,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 106,
+                "y": 50,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 111,
+                "y": 50,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "woman's bathroom",
+          "bounds": {
+            "x": 130,
+            "y": 51,
+            "width": 3,
+            "height": 7
+          },
+          "objects": [
+            {
+              "name": "bathroom sink",
+              "bounds": {
+                "x": 131,
+                "y": 53,
+                "width": 1,
+                "height": 2
+              }
+            },
+            {
+              "name": "shower",
+              "bounds": {
+                "x": 130,
+                "y": 57,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toilet",
+              "bounds": {
+                "x": 130,
+                "y": 53,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "common room",
+          "bounds": {
+            "x": 113,
+            "y": 46,
+            "width": 11,
+            "height": 9
+          },
+          "objects": [
+            {
+              "name": "common room sofa",
+              "bounds": {
+                "x": 114,
+                "y": 50,
+                "width": 1,
+                "height": 3
+              }
+            },
+            {
+              "name": "common room table",
+              "bounds": {
+                "x": 119,
+                "y": 47,
+                "width": 4,
+                "height": 3
+              }
+            },
+            {
+              "name": "pool table",
+              "bounds": {
+                "x": 117,
+                "y": 51,
+                "width": 4,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "name": "kitchen",
+          "bounds": {
+            "x": 118,
+            "y": 45,
+            "width": 7,
+            "height": 5
+          },
+          "objects": [
+            {
+              "name": "cooking area",
+              "bounds": {
+                "x": 123,
+                "y": 46,
+                "width": 1,
+                "height": 3
+              }
+            },
+            {
+              "name": "kitchen sink",
+              "bounds": {
+                "x": 121,
+                "y": 45,
+                "width": 1,
+                "height": 1
+              }
+            },
+            {
+              "name": "refrigerator",
+              "bounds": {
+                "x": 122,
+                "y": 45,
+                "width": 2,
+                "height": 1
+              }
+            },
+            {
+              "name": "toaster",
+              "bounds": {
+                "x": 120,
+                "y": 45,
+                "width": 1,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "garden",
+          "bounds": {
+            "x": 117,
+            "y": 31,
+            "width": 15,
+            "height": 11
+          },
+          "objects": [
+            {
+              "name": "dorm garden",
+              "bounds": {
+                "x": 118,
+                "y": 31,
+                "width": 14,
+                "height": 11
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
